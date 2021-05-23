@@ -25,7 +25,4 @@ sequelize.authenticate().then(
   }
 );
 
-const db = {};
-db.sequelize = sequelize;
-
-module.exports = db;
+module.exports = sequelize;

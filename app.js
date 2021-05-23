@@ -8,7 +8,7 @@ var game = require('./controllers/gamecontroller');
 
 const port = process.env.PORT || 4000;
 
-db.sequelize.sync();
+db.sync();
 app.use(require('body-parser').json());
 app.use('/api/auth', user);
 app.use(require('./middleware/validate-session'));
